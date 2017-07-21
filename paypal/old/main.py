@@ -5,8 +5,8 @@ import string
 sender_batch_id = ''.join(random.choice(string.ascii_uppercase) for i in range(12))
 
 paypalrestsdk.configure({"mode":"sandbox",
-						"client_id": "AXfz9xfbNbSdvCEwVRBbpHyzT2hFS9W1JyXetRw_59iNAmwe2S_WSbhUKdAjjHIYb8nUAMC-UVxp3tTW",
-						"client_secret":"EIns228oAFJiA_wm5hp102d8Q0oth_8jPQFhAd78C61xcB4Jp5lJnbf0OeLd7yYcJcyaBBamYCCbZHP1"})
+			 "client_id": "AXfz9xfbNbSdvCEwVRBbpHyzT2hFS9W1JyXetRw_59iNAmwe2S_WSbhUKdAjjHIYb8nUAMC-UVxp3tTW",
+			 "client_secret":"EIns228oAFJiA_wm5hp102d8Q0oth_8jPQFhAd78C61xcB4Jp5lJnbf0OeLd7yYcJcyaBBamYCCbZHP1"})
 
 payout = paypalrestsdk.Payout({
     "sender_batch_header": {
